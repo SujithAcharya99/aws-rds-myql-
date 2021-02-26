@@ -71,16 +71,3 @@ app.post('/Persons', (req, res) => {
             console.log(err);
     })
 });
-
-// //Update an employees
-// app.put('/employees', (req, res) => {
-//     let emp = req.body;
-//     var sql = "SET @EmpID = ?;SET @Name = ?;SET @EmpCode = ?;SET @Salary = ?; \
-//     CALL EmployeeAddOrEdit(@EmpID,@Name,@EmpCode,@Salary);";
-//     mysqlConnection.query(sql, [emp.EmpID, emp.Name, emp.EmpCode, emp.Salary], (err, rows, fields) => {
-//         if (!err)
-//             res.send('Updated successfully');
-//         else
-//             console.log(err);
-//     })
-// });
